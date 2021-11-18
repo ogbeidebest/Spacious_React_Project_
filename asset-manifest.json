@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/spacious-project/static/css/main.ec231312.chunk.css",
+    "main.js": "/spacious-project/static/js/main.074fdf85.chunk.js",
+    "main.js.map": "/spacious-project/static/js/main.074fdf85.chunk.js.map",
+    "runtime-main.js": "/spacious-project/static/js/runtime-main.5fb1e23e.js",
+    "runtime-main.js.map": "/spacious-project/static/js/runtime-main.5fb1e23e.js.map",
+    "static/css/2.383c0125.chunk.css": "/spacious-project/static/css/2.383c0125.chunk.css",
+    "static/js/2.29c0b4bc.chunk.js": "/spacious-project/static/js/2.29c0b4bc.chunk.js",
+    "static/js/2.29c0b4bc.chunk.js.map": "/spacious-project/static/js/2.29c0b4bc.chunk.js.map",
+    "static/js/3.373450d4.chunk.js": "/spacious-project/static/js/3.373450d4.chunk.js",
+    "static/js/3.373450d4.chunk.js.map": "/spacious-project/static/js/3.373450d4.chunk.js.map",
+    "index.html": "/spacious-project/index.html",
+    "static/css/2.383c0125.chunk.css.map": "/spacious-project/static/css/2.383c0125.chunk.css.map",
+    "static/css/main.ec231312.chunk.css.map": "/spacious-project/static/css/main.ec231312.chunk.css.map",
+    "static/js/2.29c0b4bc.chunk.js.LICENSE.txt": "/spacious-project/static/js/2.29c0b4bc.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5fb1e23e.js",
+    "static/css/2.383c0125.chunk.css",
+    "static/js/2.29c0b4bc.chunk.js",
+    "static/css/main.ec231312.chunk.css",
+    "static/js/main.074fdf85.chunk.js"
+  ]
+}
