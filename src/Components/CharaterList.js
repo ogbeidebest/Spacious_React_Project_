@@ -6,7 +6,7 @@ import InfoModal2 from './Modal2';
 const Charaters = [
     {
         id: 1,
-        image: "./images/characters/character-1.png",
+        image: "./images/characters/character-5.png",
         Name: "brookyln simmons",
         Friends: "23 friends"
     },
