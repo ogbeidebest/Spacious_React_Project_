@@ -221,6 +221,9 @@ html {
 }
 
 @media (max-width: 768px) {
+	body {
+		overflow-x: hidden;
+	}
 	.wins {
 		position: absolute;
 		top: 4.5%;
@@ -255,6 +258,9 @@ html {
 	}
 }
 @media (max-width: 576px) {
+	body {
+		overflow-x: hidden;
+	}
 	.wins {
 		top: 48.5%;
 		border-radius: 1%;
@@ -277,6 +283,9 @@ html {
 	}
 }
 @media (max-width: 985px) {
+	body {
+		overflow-x: hidden;
+	}
 	.good {
 		display: none;
 	}
@@ -294,5 +303,20 @@ html {
 	.goodsP {
 		left: 39.5rem;
 		position: absolute;
+	}
+}
+@media (max-width: 425px) {
+	body {
+		overflow-x: hidden;
+	}
+}
+@media (max-width: 375px) {
+	body {
+		overflow-x: hidden;
+	}
+}
+@media (max-width: 320px) {
+	body {
+		overflow-x: hidden;
 	}
 }
