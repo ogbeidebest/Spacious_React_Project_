@@ -108,7 +108,7 @@ const PlanetList = () => {
                     ))}
                 </div>
 
-                <div className="goodsP">
+                <div className="goodsP  d-none d-md-block ">
                     <InfoModal />
                 </div>
             </div>

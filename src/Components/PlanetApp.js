@@ -155,7 +155,7 @@ const PlanetApp = () => {
 
 
                                 ))}    </div>
-                            <div className="goods">
+                            <div className="goods  d-none d-md-block ">
                                 <InfoModal />
 
 

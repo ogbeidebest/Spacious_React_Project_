@@ -112,7 +112,7 @@ const Charater = () => {
 
 
 
-                    ))}     </div>  <div className="good">
+                    ))}     </div>  <div className="good  d-none d-md-block ">
                     <InfoModal2 />
 
 
