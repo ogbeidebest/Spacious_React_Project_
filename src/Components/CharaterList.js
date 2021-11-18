@@ -1,6 +1,6 @@
 import React from 'react';
 import InfoModal2 from './Modal2';
-
+import icon2 from '../icon2.svg';
 import peter1 from '../peter1.png';
 import peter2 from '../peter2.png';
 import peter3 from '../peter3.png';
@@ -157,8 +157,12 @@ const CharaterList = ({ person }) => {
                     </div>
                     <div className="col-lg-3 col-md-4 wins">
                         <div className="container">
-                            <div className="win    d-flex justify-content-end my-4">
-                                <img src="./images/assets/x-square-fill.svg" alt="" />
+                            <div className="win  d-flex justify-content-end my-4  " >
+
+
+                                <img src={icon2} alt="" className=" " />
+
+
                             </div>
                             <div className="aph">
                                 <h2 className="text-capitalize fs-3">

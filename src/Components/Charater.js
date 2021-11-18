@@ -63,40 +63,41 @@ const Charater = () => {
             image: peter5,
             Name: "jenny wilson",
             Friends: "23 friends",
-            des: " jenny is a very nice people"
+            des: " Jenny is a very nice people"
         },
         {
             id: 6,
             image: peter6,
             Name: "marvin mckinney",
             Friends: "23 friends",
-            des: "marvin is a very nice people"
+            des: "Marvin is a very nice people"
         },
         {
             id: 7,
             image: peter7,
             Name: "jerome bell",
             Friends: "23 friends",
-            des: "jerome is a very nice people"
+            des: "Jerome is a very nice people"
         },
         {
             id: 8,
             image: peter8,
-            Name: "guy hawkins",
-            Friends: "23 friends"
+            Name: "Guy hawkins",
+            Friends: "23 friends",
+            des: "Guy is a very nice people"
         },
         {
             id: 9,
             image: peter9,
             Name: "robert fox",
             Friends: "23 friends",
-            des: "robert is a very nice people"
+            des: "Robert is a very nice people"
         }, {
             id: 10,
             image: peter10,
             Name: "jerome bell",
             Friends: "23 friends",
-            des: "jerome is a very nice people"
+            des: "Jerome is a very nice people"
         },
 
         {
@@ -104,14 +105,14 @@ const Charater = () => {
             image: peter11,
             Name: "guy hawkins",
             Friends: "23 friends",
-            des: " guy is a very nice people"
+            des: " Guy is a very nice people"
         },
         {
             id: 12,
             image: peter12,
             Name: "robert fox",
             Friends: "23 friends",
-            des: "robert is a very nice people"
+            des: "Robert is a very nice people"
         }]
     )
 
