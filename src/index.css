@@ -3,6 +3,7 @@ body {
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
 		"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
 		sans-serif;
+	overflow-x: hidden;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	background-color: #f2f2f2;
@@ -274,10 +275,11 @@ html {
 	}
 }
 @media (max-width: 985px) {
+	body {
+		overflow-x: hidden;
+	}
 	.good {
-		left: 41rem;
-		position: absolute;
-		top: 150%;
+		display: none;
 	}
 	.goods {
 		position: absolute;

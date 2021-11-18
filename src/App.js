@@ -1,6 +1,6 @@
 import Navbar from './Components/Navbar';
 import Navs from './Components/Navs';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { HashRouter as Router, Route } from 'react-router-dom';
 import PlanetList from './Components/PlanetList';
 import { Switch } from 'react-router';
 import PlanetApp from './Components/PlanetApp';
