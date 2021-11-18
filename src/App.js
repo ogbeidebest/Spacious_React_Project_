@@ -1,6 +1,6 @@
 import Navbar from './Components/Navbar';
 import Navs from './Components/Navs';
-import { BrowserRouter as HashRouter, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import PlanetList from './Components/PlanetList';
 import { Switch } from 'react-router';
 import PlanetApp from './Components/PlanetApp';
@@ -13,7 +13,7 @@ import CharaterList from './Components/CharaterList';
 
 function App() {
 
-  return (<HashRouter>
+  return (<Router>
     <div className="App" >
 
       <Navbar />
@@ -37,7 +37,7 @@ function App() {
       </div>
     </div>
 
-  </HashRouter >
+  </Router >
 
   )
 }
