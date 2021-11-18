@@ -129,7 +129,7 @@ const Charater = () => {
                                     </div>
 
                                     <div className="ms-1">
-                                        <p className="toy text-capitalized "> {char.Name}<p className="toy-2">{char.Friends}</p>
+                                        <p className="toy text-capitalize "> {char.Name}<p className="toy-2">{char.Friends}</p>
                                         </p>
 
                                     </div>

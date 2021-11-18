@@ -137,7 +137,7 @@ const CharaterList = ({ person }) => {
                                     <div className=" col-lg-4 col-md-6 mt-3 d-sm-none d-md-block " key={charater.id}>
                                         <div className="card muds h-100">
                                             <img src={charater.image} className="img-fluid rounded-2" alt="..." />
-                                            <div className="mx-2 mt-2">
+                                            <div className="mx-2 mt-2 text-capitalize">
                                                 <p className=""> {charater.Name}    <p className="">{charater.Friends}</p>
                                                 </p>
 
@@ -161,8 +161,8 @@ const CharaterList = ({ person }) => {
                                 <img src="./images/assets/x-square-fill.svg" alt="" />
                             </div>
                             <div className="aph">
-                                <h2 className="text-catapitalize fs-3">
-                                    {person.name}
+                                <h2 className="text-capitalize fs-3">
+                                    {person.Name}
                                 </h2>
                                 <p>{person.des}</p>
                                 <div className="d-flex justify-content-between">
