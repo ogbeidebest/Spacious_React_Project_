@@ -1,5 +1,6 @@
 import React from 'react'
 import InfoModal2 from './Modal2';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import peter1 from '../peter1.png';
 import peter2 from '../peter2.png';
@@ -13,102 +14,127 @@ import peter9 from '../peter9.png';
 import peter10 from '../peter10.png';
 import peter11 from '../peter11.png';
 import peter12 from '../peter12.png';
+import CharaterList from './CharaterList'
 
 
-const charaterl = [
-    {
-        id: 1,
-        image: peter1,
-        Name: "brookyln simmons",
-        Friends: "23 friends"
-    },
-    {
-        id: 2,
-        image: peter2,
-        Name: "cameron williamson",
-        Friends: "23 friends"
-    },
-    {
-        id: 3,
-        image: peter3,
-        Name: "leslie alexander",
-        Friends: "23 friends"
-    }, {
-        id: 4,
-        image: peter4,
-        Name: "kristin waston",
-        Friends: "23 friends"
-    },
-    {
-        id: 5,
-        image: peter5,
-        Name: "jenny wilson",
-        Friends: "23 friends"
-    },
-    {
-        id: 6,
-        image: peter6,
-        Name: "marvin mckinney",
-        Friends: "23 friends"
-    },
-    {
-        id: 7,
-        image: peter7,
-        Name: "jerome bell",
-        Friends: "23 friends"
-    },
-    {
-        id: 8,
-        image: peter8,
-        Name: "guy hawkins",
-        Friends: "23 friends"
-    },
-    {
-        id: 9,
-        image: peter9,
-        Name: "robert fox",
-        Friends: "23 friends"
-    }, {
-        id: 10,
-        image: peter10,
-        Name: "jerome bell",
-        Friends: "23 friends"
-    },
-    {
-        id: 11,
-        image: peter11,
-        Name: "guy hawkins",
-        Friends: "23 friends"
-    },
-    {
-        id: 12,
-        image: peter12,
-        Name: "robert fox",
-        Friends: "23 friends"
+
+
+const Charater = () => {
+    const handleClick = () => {
+        setShow(false)
+        setDisplay1(true)
     }
 
-];
-const Charater = () => {
-    return (
-        <div>
-            <div className="container">
-                <div className="row">
-                    {charaterl.map((Planet) => (
+    const [person, setPerson] = useState({})
+    const [display1, setDisplay1] = useState(false);
+    const [show, setShow] = useState(true)
 
-                        <div className="col-12 col-lg-3 col-md-4 " key={Planet.id}>
-                            <Link to="/CharaterList">
+
+    const [charater1, setCharater1] = useState(
+        [{
+            id: 1,
+            image: peter1,
+            Name: "brookyln simmons",
+            Friends: "23 friends",
+            des: "Brookyln is a very nice people"
+        },
+        {
+            id: 2,
+            image: peter2,
+            Name: "cameron williamson",
+            Friends: "23 friends",
+            des: "Cemeron is a very nice people"
+        },
+        {
+            id: 3,
+            image: peter3,
+            Name: "leslie alexander",
+            Friends: "23 friends",
+            des: "Leslie is a very nice people"
+        }, {
+            id: 4,
+            image: peter4,
+            Name: "kristin waston",
+            Friends: "23 friends",
+            des: "Kristin is a very nice people"
+        },
+        {
+            id: 5,
+            image: peter5,
+            Name: "jenny wilson",
+            Friends: "23 friends",
+            des: " jenny is a very nice people"
+        },
+        {
+            id: 6,
+            image: peter6,
+            Name: "marvin mckinney",
+            Friends: "23 friends",
+            des: "marvin is a very nice people"
+        },
+        {
+            id: 7,
+            image: peter7,
+            Name: "jerome bell",
+            Friends: "23 friends",
+            des: "jerome is a very nice people"
+        },
+        {
+            id: 8,
+            image: peter8,
+            Name: "guy hawkins",
+            Friends: "23 friends"
+        },
+        {
+            id: 9,
+            image: peter9,
+            Name: "robert fox",
+            Friends: "23 friends",
+            des: "robert is a very nice people"
+        }, {
+            id: 10,
+            image: peter10,
+            Name: "jerome bell",
+            Friends: "23 friends",
+            des: "jerome is a very nice people"
+        },
+
+        {
+            id: 11,
+            image: peter11,
+            Name: "guy hawkins",
+            Friends: "23 friends",
+            des: " guy is a very nice people"
+        },
+        {
+            id: 12,
+            image: peter12,
+            Name: "robert fox",
+            Friends: "23 friends",
+            des: "robert is a very nice people"
+        }]
+    )
+
+    return (
+        <div>{show &&
+            (< div className="container">
+                <div className="row">
+                    {charater1.map((char) => (
+
+                        <div className="col-12 col-lg-3 col-md-4 " key={char.id}>
+                            <div onClick={handleClick}><div onClick={() => setPerson(char)}>
                                 <div className="card bone my-2">
                                     <div className="d-flex justify-content-center">
-                                        <img src={Planet.image} className="img-fluid rounded-1" alt="..." />
+                                        <img src={char.image} className="img-fluid rounded-1" alt="..." />
                                     </div>
 
                                     <div className="ms-1">
-                                        <p className="toy text-capitalized "> {Planet.Name}<p className="toy-2">{Planet.Friends}</p>
+                                        <p className="toy text-capitalized "> {char.Name}<p className="toy-2">{char.Friends}</p>
                                         </p>
 
                                     </div>
-                                </div></Link>
-                        </div>
+                                </div></div>
+                            </div></div>
 
 
 
@@ -117,8 +143,12 @@ const Charater = () => {
 
 
                 </div>
-            </div>
+            </div>)}
+            {
+                display1 && <CharaterList person={person} />
+            }
         </div >
+
 
     )
 }

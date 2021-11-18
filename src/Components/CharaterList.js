@@ -117,7 +117,8 @@ const Charateristics = [
     }
 
 ];
-const CharaterList = () => {
+const CharaterList = ({ person }) => {
+
     return (
         <div className="container-fluid">
             <div className="contain-fluid">
@@ -160,10 +161,10 @@ const CharaterList = () => {
                                 <img src="./images/assets/x-square-fill.svg" alt="" />
                             </div>
                             <div className="aph">
-                                <h2 className="alpha">
-                                    Jane Coper
+                                <h2 className="text-catapitalize fs-3">
+                                    {person.name}
                                 </h2>
-                                <p>Jane Coper is a really nice person she's been living on planet alpha for the last 10years</p>
+                                <p>{person.des}</p>
                                 <div className="d-flex justify-content-between">
                                     <div> <p>Planet</p>
                                         <p>Alpha</p>
